@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 0;padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: white;
+  padding: 10px 0;
+}
+header h1{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.quizComponent{
+  margin: 10px;
+}
+
+button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 24px;
   }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="radio"]{
+
+  margin: 0 8px;
+}
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.question{
+  margin-bottom: 5px;
+}
+
+.answer{
+  margin: 5px 0;
+}
+
+.feedback{
+  margin-top: 20px;
+}
+
+.feedback span{
+  font-weight: 600;
+}
+
+.level{
+  display: flex;
+  justify-content: space-between;
+}
+
+.endScreenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f9fc;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.endScreenTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.endScreenScore {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.restartButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restartButton:hover {
+  background-color: #45a049;
+}
+
+.container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.label{
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
